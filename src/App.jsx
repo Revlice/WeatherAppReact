@@ -5,7 +5,7 @@ import {useState} from "react";
 function App() {
     const [data,setData]= useState(null);
     let getApi = async(name)=>{
-        let api_key = "41eac9545d9e882db884d2b8812ba876";
+        let api_key = "buraya api gelecek...";
         let response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${api_key}&units=metric`);
         const weatherData = response.data;
         console.log(weatherData);
